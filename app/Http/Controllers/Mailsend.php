@@ -18,6 +18,7 @@ class Mailsend extends Controller
 
         \Mail::to('keeprich@gmail.com')->send(new SendMail($details));
         return view('emails.thanks');
+        // echo 'emails.thanks';
 
     }
 }
